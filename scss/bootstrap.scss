@@ -10,6 +10,7 @@
 @import "functions";
 @import "variables";
 @import "mixins";
+@import "utilities";
 
 
 // Layout & components
@@ -55,8 +56,10 @@
 
 // Utilities
 
-@import "utilities";
-@import "utilities/utilities";
+@import "utilities/api";
+@import "utilities/sizing";
+@import "utilities/text";
+@import "utilities/visibility";
 
 
 // Print

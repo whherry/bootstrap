@@ -134,11 +134,6 @@ $utilities: map-merge(
       class: border,
       values: map-merge($theme-colors, (white: $white))
     ),
-    "visibility": (
-      property: visibility,
-      class: v,
-      values: visible hidden
-    ),
     // Sizing utilities
     "width": (
       property: width,
