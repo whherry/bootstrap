@@ -1,58 +1,6 @@
 // Utilities
 //
-// Congratulations, you have found your way to the utilities configuration file! It's recommended to first grab
-// a cup of coffee or tea before continuing reading because it can take some time before you figured out how it works.
 //
-// Before reading on, you will need to know what sass maps are, information about it can be found in the official docs
-// (https://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps) or in this article:
-// https://www.sitepoint.com/using-sass-maps/
-//
-// The `$utilities` map contains all utilities and is later merged with your custom `$utilities` map if present.
-// The utility variables accept the following options:
-// - property
-//   Obviously just the name of the property. This can be a string or an array of strings (needed for eg horizontal
-//   paddings or margins).
-// - responsive (optional)
-//   Boolean indicating if responsive classes need to be generated. `false` by default.
-// - class (optional)
-//   Variable to change the class name if you don't want it to be the same as the property.
-// - values
-//   This can be a list of values or a map if you don't want the class name to be the same as the value. If null is used
-//   as map key, it isn't rendered.
-// - print (optional)
-//   Boolean indicating if print classes need to be generated. `false` by default.
-//
-// All utility variables are added to the `$utilities` variable. If you want to add your custom utilities, you can add
-// them like this:
-// $utilities: (
-//   "opacity": (
-//     property: opacity,
-//     class: o,
-//     values: (
-//       0: 0,
-//       25: .25,
-//       50: .5,
-//       100: 1,
-//     )
-//   )
-// );
-//
-// You can also override excising utilities by using the same key. For example if you want more responsive overflow
-// utility classes you can do this:
-// $utilities: (
-//   "overflow": (
-//     responsive: true,
-//     property: overflow,
-//     values: visible hidden scroll auto,
-//   ),
-// );
-//
-// Utilities can also be removed, for example if you want to remove the `float` utilities:
-// $utilities: (
-//   "float" :false,
-// );
-//
-// And now it's up to you, go go go!
 
 
 $utilities: () !default;

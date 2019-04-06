@@ -61,9 +61,11 @@
     - title: Position
     - title: Screen readers
     - title: Stretched link
+    - title: Text
 
 - title: Utilities
   pages:
+    - title: API
     - title: Borders
     - title: Close icon
     - title: Colors
