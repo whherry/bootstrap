@@ -19,7 +19,7 @@ Import [Bootstrap's JavaScript]({{< docsref "/getting-started/javascript" >}}) b
 import { Tooltip, Toast, Popover } from 'bootstrap';
 {{< /highlight >}}
 
-Alternatively if you need just a few of our plugins, you may **import plugins individually** as needed:
+Alternatively, if you only need just a few of our plugins, you may **import plugins individually** as needed:
 
 {{< highlight js >}}
 import Alert from 'bootstrap/js/dist/alert';
