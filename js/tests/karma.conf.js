@@ -8,7 +8,7 @@ const {
   browsersKeys
 } = require('./browsers')
 
-const jqueryFile = process.env.USE_OLD_JQUERY ? 'https://code.jquery.com/jquery-1.9.1.min.js' : 'node_modules/jquery/dist/jquery.slim.min.js'
+const jqueryFile = process.env.USE_OLD_JQUERY ? 'https://code.jquery.com/jquery-1.9.1.js' : 'node_modules/jquery/dist/jquery.slim.js'
 const bundle = process.env.BUNDLE === 'true'
 const browserStack = process.env.BROWSER === 'true'
 
@@ -92,7 +92,7 @@ if (bundle) {
   conf.browsers = browsersKeys
   reporters.push('BrowserStack')
   files = files.concat([
-    'node_modules/jquery/dist/jquery.slim.min.js',
+    'node_modules/jquery/dist/jquery.slim.js',
     'js/dist/util.js',
     'js/dist/tooltip.js',
     'js/dist/!(util|index|tooltip).js' // include all of our js/dist files except util.js, index.js and tooltip.js
